@@ -1,8 +1,7 @@
-{%extends "layout.html"%}
-{% set active_page = "home"%}
-{%block title%}Home{%endblock%}
-    <!--page content-->
-{%block content%}
-    <h1>Home Page</h1>
-{%endblock%}
- 
+from flask import Flask, url_for, render_template
+
+app = Flask(__name__)
+
+@app.route("/")
+def render_main():
+    return render_template('home.html')
