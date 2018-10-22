@@ -1,8 +1,14 @@
 {%extends "layout.html"%}
-{% set active_page = "Page1"%}
+{% set active_page = "Page2"%}
 {%block title%}Page1{%endblock%}
     <!--page content-->
 {%block content%}
-    <h1>Page1</h1>
+ <h1> Ounce to Money</h1>
+<form action="/response3">
+  Enter weight in ounces:
+  <input name="Ounces" type="text"<p>oz<p>
+  <br><br>
+  <input type="submit">
+</form>
 {%endblock%}
  
